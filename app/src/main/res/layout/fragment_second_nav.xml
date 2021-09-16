@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SecondNavFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="423dp"
+            android:layout_height="75dp"
+            android:outlineAmbientShadowColor="@color/black"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#013B68"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="405dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/copyBtn"
+                    android:layout_width="72dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/copy" />
+
+                <ImageButton
+                    android:id="@+id/moveBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="61dp"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cut"
+                    android:text="Move" />
+
+                <ImageButton
+                    android:id="@+id/renameBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:src="@drawable/rename"
+                    android:text="Rename" />
+
+
+                <ImageButton
+                    android:id="@+id/unselectBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="72dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/unselect"
+                    android:text="Unselect" />
+
+                <ImageButton
+                    android:id="@+id/deleteBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="59dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/delete"
+                    android:text="Del" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

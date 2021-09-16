@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#001935"
+    tools:context=".otheractivities.DownloadActivity">
+
+    <TextView
+        android:id="@+id/downloadTitle"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Download a file"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/downloadBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="512dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@drawable/button_download_view"
+        android:text="Download"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/downloadTitle"
+        app:rippleColor="#7CFFFFFF" />
+
+    <TextView
+        android:id="@+id/fileNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="105dp"
+        android:textColor="@color/white"
+        android:text="Date: "
+        app:layout_constraintEnd_toStartOf="@+id/sizeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/downloadTitle" />
+
+    <TextView
+        android:id="@+id/sizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="100dp"
+        android:textColor="@color/white"
+        android:text="Size: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/downloadTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

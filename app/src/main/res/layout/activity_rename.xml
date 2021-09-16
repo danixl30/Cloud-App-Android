@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001935"
+    android:padding="5dp"
+    tools:context=".otheractivities.RenameActivity">
+
+    <TextView
+        android:id="@+id/titleRename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:textColor="@color/white"
+        android:text="Rename Item"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/itemNameRename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:foregroundTint="#FFFFFF"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="#DFDFDF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleRename" />
+
+    <TextView
+        android:id="@+id/supportTextRename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:textColor="#D11212"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameRename" />
+
+    <Button
+        android:id="@+id/renameChangeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:text="Rename"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameRename" />
+</androidx.constraintlayout.widget.ConstraintLayout>

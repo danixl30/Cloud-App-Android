@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#001935"
+    tools:context=".otheractivities.NewFolderActivity">
+
+    <TextView
+        android:id="@+id/titleNewFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:textColor="@color/white"
+        android:text="Create a new folder"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/folderName"
+        android:layout_width="260dp"
+        android:layout_height="46dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleNewFolder" />
+
+    <TextView
+        android:id="@+id/supportText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:textColor="#D11212"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/folderName" />
+
+    <TextView
+        android:id="@+id/uploadFileBTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="416dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:textSize="20dp"
+        android:text="Create"
+        android:background="@drawable/button_create_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/folderName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/firstNav"
+    tools:context=".fragments.MainNavBarFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="@color/black"
+            app:cardBackgroundColor="#013B68"
+            android:background="#505050"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/refreshBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="62dp"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:width="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/refresh" />
+
+                <ImageButton
+                    android:id="@+id/goUpBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="64dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/goup" />
+
+                <ImageButton
+                    android:id="@+id/typeViewBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="65dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/viewtype" />
+
+                <ImageButton
+                    android:id="@+id/uploadBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="67dp"
+                    android:layout_height="57dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/upload" />
+
+                <ImageButton
+                    android:id="@+id/newFolderBTN"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="64dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/newfolder" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
